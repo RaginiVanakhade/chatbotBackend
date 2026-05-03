@@ -40,3 +40,8 @@ JWT_SECRET=your_secret_key
 
 Start the server:
 npm run dev
+
+
+
+npm run dev     # Start development server
+npm run build   # Production build
