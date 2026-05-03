@@ -7,7 +7,7 @@ import pool from './config/db.js';
 const PORT = process.env.PORT || 5000;
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
-    cors: { origin: "http://localhost:3000", credentials: true }
+   cors: { origin: "http://localhost:5173", credentials: true }
 });
 
 // JWT middleware for Socket.io handshake
