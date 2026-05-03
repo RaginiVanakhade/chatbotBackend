@@ -18,22 +18,10 @@ This is the backend service for a real-time multi-room chat application built us
 - Express.js
 - Socket.io
 - JSON Web Token (JWT)
-- (Optional) MongoDB for message persistence
+- Mysql
 
 ---
 
-## 📂 Project Structure
-backend/
-│── src/
-│ ├── controllers/
-│ ├── routes/
-│ ├── middleware/
-│ ├── sockets/
-│ ├── models/ (if using DB)
-│ └── app.js
-│── server.js
-│── package.json
-│── .env
 
 
 ## ⚙️ Installation
@@ -42,4 +30,13 @@ backend/
 
 ```bash
 git clone <your-repo-url>
-cd backend
+cd chatbotBackend
+npm install
+
+
+Create a .env file:
+PORT=5000
+JWT_SECRET=your_secret_key
+
+Start the server:
+npm run dev
